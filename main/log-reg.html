@@ -47,8 +47,9 @@
                     <i class="bx bx-user"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Senha" required>
+                    <input type="password" class="input-field" placeholder="Senha" required id="login-password">
                     <i class="bx bx-lock-alt"></i>
+                    <i class='bx bx-hide' id="login-eye" onclick="togglePassword('login-password', 'login-eye')"></i>
                 </div>
 
                 <div class="input-box">
@@ -94,6 +95,7 @@
                 <div class="input-box">
                     <input type="password" class="input-field" placeholder="Senha">
                     <i class="bx bx-lock-alt"></i>
+                    <i class='bx bx-hide' id="register-eye" onclick="togglePassword('register-password', 'register-eye')"></i>
                 </div>
 
                 <div class="input-box">
@@ -141,15 +143,32 @@
     </script>
 
     <script>
-       function myMenuFunction() {
-    var i = document.getElementById("navMenu");
-    if(i.className === "nav-menu") {
-        i.className += " responsive";
+        function togglePassword(passwordFieldId, eyeIconId) {
+    var passwordField = document.getElementById(passwordFieldId);
+    var eyeIcon = document.getElementById(eyeIconId);
+
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        eyeIcon.classList.remove('bx-hide');
+        eyeIcon.classList.add('bx-show');
     } else {
-        i.className = "nav-menu";
+        passwordField.type = "password";
+        eyeIcon.classList.remove('bx-show');
+        eyeIcon.classList.add('bx-hide');
     }
-   }
- 
+}
+    </script>
+
+    <script>
+        function myMenuFunction() {
+            var i = document.getElementById("navMenu");
+            if (i.className === "nav-menu") {
+                i.className += " responsive";
+            } else {
+                i.className = "nav-menu";
+            }
+        }
+
     </script>
 </body>
 
