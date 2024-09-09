@@ -25,48 +25,25 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <a href="log-reg.html"><button class="btn white-btn" id="loginBtn" onclick="login()">Entrar</button></a>
-                <a href="log-reg.html"><button class="btn" id="registerBtn" onclick="register()">Registro</button></a>
+                <a href="log-reg.html"><button class="btn white-btn" id="loginBtn">Entrar/Registrar</button></a>
+                
             </div>
             <div class="nav-menu-btn">
                 <i class="bx bx-menu" onclick="myMenuFunction()"></i>
             </div>
         </nav>
 
-    <script>
-        var a = document.getElementById("loginBtn");
-        var b = document.getElementById("registerBtn");
-        var x = document.getElementById("login");
-        var y = document.getElementById("register");
-        function login() {
-            x.style.left = "4px";
-            y.style.right = "-520px";
-            a.className += " white-btn";
-            b.className = "btn";
-            x.style.opacity = 1;
-            y.style.opacity = 0;
-        }
-        function register() {
-            x.style.left = "-510px";
-            y.style.right = "5px";
-            a.className = "btn";
-            b.className += " white-btn";
-            x.style.opacity = 0;
-            y.style.opacity = 1;
-        }
-    </script>
+        <script>
+            function myMenuFunction() {
+                var i = document.getElementById("navMenu");
+                if (i.className === "nav-menu") {
+                    i.className += " responsive";
+                } else {
+                    i.className = "nav-menu";
+                }
+            }
 
-    <script>
-       function myMenuFunction() {
-    var i = document.getElementById("navMenu");
-    if(i.className === "nav-menu") {
-        i.className += " responsive";
-    } else {
-        i.className = "nav-menu";
-    }
-   }
- 
-    </script>
+        </script>
 </body>
 
 </html>
