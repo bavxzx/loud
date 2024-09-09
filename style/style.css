@@ -10,6 +10,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 /*navbar inicio*/
@@ -239,7 +240,7 @@ header {
         top: -800px;
         display: flex;
         justify-content: center;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(128, 128, 128, 0.2);
         width: 100%;
         height: 90vh;
         backdrop-filter: blur(20px);
@@ -259,14 +260,14 @@ header {
         font-size: 25px;
         color: #fff;
         padding: 10px;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(128, 128, 128, 0.2);
         border-radius: 50%;
         cursor: pointer;
         transition: .3s;
     }
 
     .nav-menu-btn i:hover {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(128, 128, 128, 0.15);
     }
 }
 
