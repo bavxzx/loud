@@ -46,4 +46,4 @@ Lista os jogadores da atual line-up do time LOUD Valorant:
 
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/seu_usuario/projeto-loud.git
+   git clone https://github.com/bavxzx/projeto-loud.git
