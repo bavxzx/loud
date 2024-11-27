@@ -17,10 +17,9 @@
             </div>
             <div class="nav-menu" id="navMenu" id="navMenu">
                 <ul>
-                    <li><a href="index.html" class="link">Inicio</a></li>
-                    <li><a href="elenco.html" class="link">Elenco</a></li>
-                    <li><a href="hydra.html" class="link">Hydra Collection</a></li>
-                    <li><a href="contato.html" class="link">Contato</a></li>
+                    <li><a href="index.php" class="link">Inicio</a></li>
+                    <li><a href="hydra.php" class="link">Hydra Collection</a></li>
+                    <li><a href="contato.php" class="link">Contato</a></li>
                 </ul>
             </div>
             <div class="nav-button">
@@ -43,19 +42,19 @@
                     <span>Não tem uma conta?ㅤ<a href="#" onclick="register()">Registre-se</a></span>
                     <header>Entrar</header>
                 </div>
-            <form method="post" action="login.php">
+            <form method="post" action="../php/login.php">
                 <div class="input-box">
                     <input type="text" class="input-field" name="user" placeholder="Usuario" required>
                     <i class="bx bx-user"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" class="input-field" name="password" placeholder="Senha" required id="login-password">
+                    <input type="password" class="input-field" name="password" placeholder="Senha" id="login-password" required>
                     <i class="bx bx-lock-alt"></i>
                     <i class='bx bx-hide' id="login-eye" onclick="togglePassword('login-password', 'login-eye')"></i>
                 </div>
 
                 <div class="input-box">
-                    <input type="submit" class="submit" value="Entrar">
+                    <button type="submit" class="submit">Login</button>
                 </div>
             </form>    
                 <div class="two-col">
@@ -76,33 +75,35 @@
                     <span>Já tem uma conta?ㅤ<a href="#" onclick="login()">Entrar</a></span>
                     <header>Registre-se</header>
                 </div>
-            <form method="post" action="register.php">
+
+                
+            <form method="post" name="asd" action="../php/register.php">
                 <div class="two-forms">
                     <div class="input-box">
-                        <input type="text" name="user" class="input-field" placeholder="Usuario">
+                        <input type="text" name="user" class="input-field" placeholder="Usuario" required>
                         <i class="bx bx-user"></i>
                     </div>
 
                     <div class="input-box">
-                        <input type="text" name="name" class="input-field" placeholder="Nome">
+                        <input type="text" name="name" class="input-field" placeholder="Nome" required>
                         <i class="bx bx-user"></i>
                     </div>
                 </div>
 
                 <div class="input-box">
-                    <input type="text" name="email" class="input-field" placeholder="Email">
+                    <input type="text" name="email" class="input-field" placeholder="Email" required>
                     <i class="bx bx-envelope"></i>
                 </div>
 
                 <div class="input-box">
-                    <input type="password" name="password" class="input-field" placeholder="Senha" id="register-password">
+                    <input type="password" name="password" class="input-field" placeholder="Senha" id="register-password" required>
                     <i class="bx bx-lock-alt"></i>
                     <i class='bx bx-hide' id="register-eye"
                         onclick="togglePassword('register-password', 'register-eye')"></i>
                 </div>
 
                 <div class="input-box">
-                    <input type="submit" class="submit" value="Registro">
+                    <button type="submit" class="submit">Registro</button>
                 </div>
             </form>    
                 <div class="two-col">

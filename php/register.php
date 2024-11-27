@@ -2,28 +2,36 @@
 
     include 'connect.php';
 
-    if(isset($_POST['register'])){
+    if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $username=$_POST['user'];
         $name=$_POST['name'];
         $email=$_POST['email'];
-        $password=$_POST['password']
+        $password=$_POST['password'];
         $password=md5($password);
+        $conn = conexao();
 
-        $verifyUser = "SELECT users FROM username WHERE email='$email' OR username='$username'";
-        $result = $conn->query($verifyUser);
 
-        if($result->num_rows>0){
-            echo "Email inserido ja existe.";
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            die("E-mail inválido!");
         }
-        else{
-            $insertQuery = "INSERT INTO users(username, name, email, password")
-                VALUES('$username', '$name', '$email', '$password');
 
-            if ($conn->query($insertQuery) === TRUE) {
+        $sql = "SELECT * FROM users WHERE username = '$username' OR email = '$email'";
+        $result = mysqli_query($conn, $sql);
+
+
+        if (mysqli_num_rows($result) > 0) {
+            echo "Usuário ou e-mail já cadastrado!";
+        }else {
+            $sql = "INSERT INTO users (username, name, email, password) VALUES ('$username', '$name', '$email', '$password')";
+        
+            if (mysqli_query($conn, $sql)) {
                 echo "Registro realizado com sucesso!";
+
+                header("Location: index.php");
             } else {
-                echo "Erro: " . $conn->error;
-            }   
+                echo "Erro ao registrar: " . mysqli_error($conn);
+            }
         }
+         mysqli_close($conn);
     }
 ?>

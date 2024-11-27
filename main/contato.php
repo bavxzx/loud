@@ -17,14 +17,13 @@
             </div>
             <div class="nav-menu" id="navMenu" id="navMenu">
                 <ul>
-                    <li><a href="index.html" class="link">Inicio</a></li>
-                    <li><a href="elenco.html" class="link">Elenco</a></li>
-                    <li><a href="hydra.html" class="link">Hydra Collection</a></li>
-                    <li><a href="contato.html" class="link active">Contato</a></li>
+                    <li><a href="index.php" class="link">Inicio</a></li>
+                    <li><a href="hydra.php" class="link">Hydra Collection</a></li>
+                    <li><a href="contato.php" class="link active">Contato</a></li>
                 </ul>
             </div>
             <div class="nav-button">
-                <a href="log-reg.html"><button class="btn white-btn" id="loginBtn">Entrar/Registrar</button></a>
+                <a href="log-reg.php"><button class="btn white-btn" id="loginBtn">Entrar/Registrar</button></a>
                 
             </div>
             <div class="nav-menu-btn">

@@ -1,11 +1,10 @@
-<?php
-    $host = "localhost";
-    $user = "root";
-    $password = ""; 
-    $db = "Contas";
+<?php 
+    function conexao() {
+    $nomebd = "contas";
+    $usuario = "root";
+    $senha = "";
+    $local = "localhost";
 
-    $con = new mysql($host, $user, $password);
-    if($conn->connect_error){
-        echo "Falha para conectar no banco".$conn->connect_error;
-    }
+    return mysqli_connect($local, $usuario, $senha, $nomebd);
+}
 ?>
