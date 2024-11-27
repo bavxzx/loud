@@ -27,7 +27,7 @@
             if (mysqli_query($conn, $sql)) {
                 echo "Registro realizado com sucesso!";
 
-                header("Location: index.php");
+                header("Location: ../main/index.php");
             } else {
                 echo "Erro ao registrar: " . mysqli_error($conn);
             }
