@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
@@ -10,15 +9,14 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato</title>
     <link rel="stylesheet" href="../style/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
+    
 <body>
     <div class="wrapper">
         <nav class="nav">
@@ -58,6 +56,24 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 }
             }
         </script>
+
+        <!-- Formulário de Contato -->
+        <div class="form-container">
+            <h2>Entre em Contato</h2>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Sua Mensagem" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit">Enviar Mensagem</button>
+                </div>
+        </div>
+    </div>
 </body>
 
 </html>

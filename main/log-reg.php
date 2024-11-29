@@ -54,9 +54,11 @@ session_start();
                         <i class="bx bx-user"></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" class="input-field" name="password" placeholder="Senha" id="login-password" required>
+                        <input type="password" class="input-field" name="password" placeholder="Senha"
+                            id="login-password" required>
                         <i class="bx bx-lock-alt"></i>
-                        <i class='bx bx-hide' id="login-eye" onclick="togglePassword('login-password', 'login-eye')"></i>
+                        <i class='bx bx-hide' id="login-eye"
+                            onclick="togglePassword('login-password', 'login-eye')"></i>
                     </div>
 
                     <div class="input-box">
@@ -100,9 +102,11 @@ session_start();
                     </div>
 
                     <div class="input-box">
-                        <input type="password" name="password" class="input-field" placeholder="Senha" id="register-password" required>
+                        <input type="password" name="password" class="input-field" placeholder="Senha"
+                            id="register-password" required>
                         <i class="bx bx-lock-alt"></i>
-                        <i class='bx bx-hide' id="register-eye" onclick="togglePassword('register-password', 'register-eye')"></i>
+                        <i class='bx bx-hide' id="register-eye"
+                            onclick="togglePassword('register-password', 'register-eye')"></i>
                     </div>
 
                     <div class="input-box">
