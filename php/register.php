@@ -7,7 +7,6 @@
         $name=$_POST['name'];
         $email=$_POST['email'];
         $password=$_POST['password'];
-        $password=md5($password);
         $conn = conexao();
 
 
@@ -27,7 +26,7 @@
             if (mysqli_query($conn, $sql)) {
                 echo "Registro realizado com sucesso!";
 
-                header("Location: ../main/index.php");
+                header("Location: ../main/log-reg.php");
             } else {
                 echo "Erro ao registrar: " . mysqli_error($conn);
             }
