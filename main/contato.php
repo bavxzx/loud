@@ -2,7 +2,6 @@
 
 session_start();
 
-
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     header("Location: log-reg.php");
     exit;
@@ -26,7 +25,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <div class="nav-logo">
                 <img src="../img/loud-ff-logo-7AC3C6CBAE-seeklogo.com.png" alt="LOUD" width="50px">
             </div>
-            <div class="nav-menu" id="navMenu" id="navMenu">
+            <div class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="index.php" class="link">Inicio</a></li>
                     <li><a href="hydra.php" class="link">Hydra Collection</a></li>
@@ -34,8 +33,15 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 </ul>
             </div>
             <div class="nav-button">
-                <a href="log-reg.php"><button class="btn white-btn" id="loginBtn">Entrar/Registrar</button></a>
-                
+                <?php
+                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+                    echo '<form method ="POST" action="../php/logout.php">
+                            <a href="logout.php"><button class="btn white-btn" id="logoutBtn">Logout</button></a>
+                        </form>';
+                } else {
+                    echo '<a href="log-reg.php"><button class="btn white-btn" id="loginBtn">Entrar/Registrar</button></a>';
+                }
+                ?>
             </div>
             <div class="nav-menu-btn">
                 <i class="bx bx-menu" onclick="myMenuFunction()"></i>
@@ -51,7 +57,6 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                     i.className = "nav-menu";
                 }
             }
-
         </script>
 </body>
 

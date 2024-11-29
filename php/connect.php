@@ -1,5 +1,5 @@
 <?php 
-    function conexao() {
+function conexao() {
     $nomebd = "contas";
     $usuario = "root";
     $senha = "";

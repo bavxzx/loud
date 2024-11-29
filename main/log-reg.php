@@ -21,7 +21,7 @@ session_start();
             <div class="nav-logo">
                 <img src="../img/loud-ff-logo-7AC3C6CBAE-seeklogo.com.png" alt="LOUD" width="50px">
             </div>
-            <div class="nav-menu" id="navMenu" id="navMenu">
+            <div class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="index.php" class="link">Inicio</a></li>
                     <li><a href="hydra.php" class="link">Hydra Collection</a></li>
@@ -30,8 +30,8 @@ session_start();
             </div>
             <div class="nav-button">
                 <ul>
-                <button class="btn white-btn" id="loginBtn" onclick="login()">Entrar</button>
-                <button class="btn" id="registerBtn" onclick="register()">Registro</button>
+                    <button class="btn white-btn" id="loginBtn" onclick="login()">Entrar</button>
+                    <button class="btn" id="registerBtn" onclick="register()">Registro</button>
                 </ul>
             </div>
             <div class="nav-menu-btn">
@@ -39,30 +39,30 @@ session_start();
             </div>
         </nav>
 
-        <!----Registro/Login-->
+        <!-- Registro/Login -->
         <div class="form-box">
 
-            <!------Login----->
+            <!-- Login -->
             <div class="login-container" id="login">
                 <div class="top">
                     <span>Não tem uma conta?ㅤ<a href="#" onclick="register()">Registre-se</a></span>
                     <header>Entrar</header>
                 </div>
-            <form method="post" action="../php/login.php">
-                <div class="input-box">
-                    <input type="text" class="input-field" name="user" placeholder="Usuario" required>
-                    <i class="bx bx-user"></i>
-                </div>
-                <div class="input-box">
-                    <input type="password" class="input-field" name="password" placeholder="Senha" id="login-password" required>
-                    <i class="bx bx-lock-alt"></i>
-                    <i class='bx bx-hide' id="login-eye" onclick="togglePassword('login-password', 'login-eye')"></i>
-                </div>
+                <form method="post" action="../php/login.php">
+                    <div class="input-box">
+                        <input type="text" class="input-field" name="user" placeholder="Usuario" required>
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" name="password" placeholder="Senha" id="login-password" required>
+                        <i class="bx bx-lock-alt"></i>
+                        <i class='bx bx-hide' id="login-eye" onclick="togglePassword('login-password', 'login-eye')"></i>
+                    </div>
 
-                <div class="input-box">
-                    <button type="submit" class="submit">Login</button>
-                </div>
-            </form>    
+                    <div class="input-box">
+                        <button type="submit" class="submit">Login</button>
+                    </div>
+                </form>
                 <div class="two-col">
                     <div class="one">
                         <input type="checkbox" id="login-check">
@@ -74,44 +74,41 @@ session_start();
                 </div>
             </div>
 
-
-            <!----Registro-->
+            <!-- Registro -->
             <div class="register-container" id="register">
                 <div class="top">
                     <span>Já tem uma conta?ㅤ<a href="#" onclick="login()">Entrar</a></span>
                     <header>Registre-se</header>
                 </div>
 
-                
-            <form method="post" name="asd" action="../php/register.php">
-                <div class="two-forms">
-                    <div class="input-box">
-                        <input type="text" name="user" class="input-field" placeholder="Usuario" required>
-                        <i class="bx bx-user"></i>
+                <form method="post" name="asd" action="../php/register.php">
+                    <div class="two-forms">
+                        <div class="input-box">
+                            <input type="text" name="user" class="input-field" placeholder="Usuario" required>
+                            <i class="bx bx-user"></i>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="text" name="name" class="input-field" placeholder="Nome" required>
+                            <i class="bx bx-user"></i>
+                        </div>
                     </div>
 
                     <div class="input-box">
-                        <input type="text" name="name" class="input-field" placeholder="Nome" required>
-                        <i class="bx bx-user"></i>
+                        <input type="text" name="email" class="input-field" placeholder="Email" required>
+                        <i class="bx bx-envelope"></i>
                     </div>
-                </div>
 
-                <div class="input-box">
-                    <input type="text" name="email" class="input-field" placeholder="Email" required>
-                    <i class="bx bx-envelope"></i>
-                </div>
+                    <div class="input-box">
+                        <input type="password" name="password" class="input-field" placeholder="Senha" id="register-password" required>
+                        <i class="bx bx-lock-alt"></i>
+                        <i class='bx bx-hide' id="register-eye" onclick="togglePassword('register-password', 'register-eye')"></i>
+                    </div>
 
-                <div class="input-box">
-                    <input type="password" name="password" class="input-field" placeholder="Senha" id="register-password" required>
-                    <i class="bx bx-lock-alt"></i>
-                    <i class='bx bx-hide' id="register-eye"
-                        onclick="togglePassword('register-password', 'register-eye')"></i>
-                </div>
-
-                <div class="input-box">
-                    <button type="submit" class="submit">Registro</button>
-                </div>
-            </form>    
+                    <div class="input-box">
+                        <button type="submit" class="submit">Registro</button>
+                    </div>
+                </form>
                 <div class="two-col">
                     <div class="one">
                         <input type="checkbox" id="register-check">
@@ -126,14 +123,13 @@ session_start();
             </div>
         </div>
     </div>
-    </div>
-    </div>
 
     <script>
         var a = document.getElementById("loginBtn");
         var b = document.getElementById("registerBtn");
         var x = document.getElementById("login");
         var y = document.getElementById("register");
+
         function login() {
             x.style.left = "4px";
             y.style.right = "-520px";
@@ -142,6 +138,7 @@ session_start();
             x.style.opacity = 1;
             y.style.opacity = 0;
         }
+
         function register() {
             x.style.left = "-510px";
             y.style.right = "5px";
@@ -178,7 +175,6 @@ session_start();
                 i.className = "nav-menu";
             }
         }
-
     </script>
 </body>
 

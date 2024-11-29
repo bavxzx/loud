@@ -65,6 +65,7 @@ body {
     border-radius: 30px;
     cursor: pointer;
     transition: .3s ease;
+
 }
 
 .btn:hover {
@@ -216,12 +217,12 @@ header {
     text-decoration: underline;
 }
 
-#register-eye{
+#register-eye {
     left: 88%;
     cursor: pointer;
 }
 
-#login-eye{
+#login-eye {
     left: 88%;
     cursor: pointer;
 }
