@@ -22,7 +22,7 @@ body {
 }
 
 .nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     display: flex;
     justify-content: space-around;
@@ -407,6 +407,7 @@ header {
     overflow: hidden;
     width: calc(25% - 20px);
     transition: transform 0.3s;
+    padding-bottom: 20px;
 }
 
 .news-card:hover {

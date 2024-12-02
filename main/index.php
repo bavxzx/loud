@@ -27,7 +27,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <div class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="index.php" class="link active">Inicio</a></li>
-                    <li><a href="fórum.php" class="link">Hydra Collection</a></li>
+                    <li><a href="forum.php" class="link">Fórum</a></li>
                     <li><a href="contato.php" class="link">Contato</a></li>
                 </ul>
             </div>
@@ -58,28 +58,23 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <div class="news-card">
             <img src="../img/dgzin.jpg" alt="Notícia 1">
             <h3>Dgzin na LOUD 2025.</h3>
-            <p>Descrição curta da notícia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#" class="read-more">Leia mais</a>
+            <p>Dgzin é o novo reforço da LOUD para a temporada de 2025, assumindo o papel de duelista principal da equipe verde. A expectativa está alta: será que essa parceria vai render bons resultados?</p>
         </div>
         <div class="news-card">
             <img src="../img/vinijr.jpg" alt="Notícia 2">
             <h3>Vini Jr sócio da LOUD!</h3>
-            <p>Descrição curta da notícia 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#" class="read-more">Leia mais</a>
+            <p>Vini Jr., craque do Real Madrid, tornou-se sócio da LOUD, fortalecendo a conexão entre esportes e games.</p>           
         </div>
         <div class="news-card">
             <img src="../img/lesssad.jpg" alt="Notícia 3">
-            <h3>Título da Notícia 3</h3>
-            <p>Descrição curta da notícia 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#" class="read-more">Leia mais</a>
+            <h3>Less e SaadHack saem da LOUD!</h3>
+            <p>Less e SaadHack se despedem da LOUD, marcando o fim de suas jornadas na equipe e abrindo novos caminhos em suas carreiras.</p>
         </div>
         <div class="news-card">
             <img src="../img/vinny.jpg" alt="Notícia 4">
-            <h3>Dgzin novo IGL da loud valorant!</h3>
-            <p>Descrição curta da notícia 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#" class="read-more">Leia mais</a>
+            <h3>Vinny novo IGL da loud valorant!</h3>
+            <p>Vinny, ex-Red Canids, é o novo IGL da LOUD. Sua experiência promete liderar a equipe rumo a grandes conquistas.</p>
         </div>
-        <!-- Adicione mais cards conforme necessário -->
     </div>
 </div>
         <script>

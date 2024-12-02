@@ -24,7 +24,7 @@ session_start();
             <div class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="index.php" class="link">Inicio</a></li>
-                    <li><a href="fórum.php" class="link">Hydra Collection</a></li>
+                    <li><a href="forum.php" class="link">Fórum</a></li>
                     <li><a href="contato.php" class="link">Contato</a></li>
                 </ul>
             </div>
@@ -65,15 +65,6 @@ session_start();
                         <button type="submit" class="submit">Login</button>
                     </div>
                 </form>
-                <div class="two-col">
-                    <div class="one">
-                        <input type="checkbox" id="login-check">
-                        <label for="login-check"> Lembre-me</label>
-                    </div>
-                    <div class="two">
-                        <label><a href="#">Esqueceu a senha?</a></label>
-                    </div>
-                </div>
             </div>
 
             <!-- Registro -->
@@ -113,16 +104,6 @@ session_start();
                         <button type="submit" class="submit">Registro</button>
                     </div>
                 </form>
-                <div class="two-col">
-                    <div class="one">
-                        <input type="checkbox" id="register-check">
-                        <label for="register-check"> Lembre-me</label>
-                    </div>
-
-                    <div class="two">
-                        <label><a href="#">Termos & Condições</a></label>
-                    </div>
-
                 </div>
             </div>
         </div>

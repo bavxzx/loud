@@ -32,7 +32,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <div class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="index.php" class="link">Inicio</a></li>
-                    <li><a href="fórum.php" class="link">Hydra Collection</a></li>
+                    <li><a href="forum.php" class="link">Fórum</a></li>
                     <li><a href="contato.php" class="link active">Contato</a></li>
                 </ul>
             </div>
@@ -63,7 +63,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 <textarea name="message" placeholder="Sua Mensagem" rows="4" id="menssagem" required></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" class="submit" id="enviarcontato">Enviar Mensagem</button>
+                <a href="contato.php"><button type="submit" class="submit" id="enviarcontato">Enviar Mensagem</button></a>
             </div>
         </div>
     </div>
