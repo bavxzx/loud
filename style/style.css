@@ -296,6 +296,7 @@ header {
 
 /* Fim login/registro */
 
+/*formulario contato*/
 .form-container {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
@@ -317,7 +318,8 @@ header {
     margin-bottom: 15px;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -328,7 +330,8 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-.form-group input:focus, .form-group textarea:focus {
+.form-group input:focus,
+.form-group textarea:focus {
     background-color: #fff;
     border-color: #4CAF50;
 }
@@ -336,7 +339,7 @@ header {
 .form-group button {
     width: 100%;
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #2bbf31;
     color: white;
     font-size: 18px;
     border: none;
@@ -347,4 +350,97 @@ header {
 
 .form-group button:hover {
     background-color: #45a049;
+}
+
+/*fim formulario contato*/
+
+.news-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.banner {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    object-position: center;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.banner-text h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.news-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px);
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    /* Ajuste a altura conforme necessário */
+    object-fit: cover;
+}
+
+.news-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.news-card p {
+    padding: 0 10px;
+    color: #666;
+}
+
+.read-more {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
 }

@@ -24,7 +24,7 @@ session_start();
             <div class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="index.php" class="link">Inicio</a></li>
-                    <li><a href="hydra.php" class="link">Hydra Collection</a></li>
+                    <li><a href="fórum.php" class="link">Hydra Collection</a></li>
                     <li><a href="contato.php" class="link">Contato</a></li>
                 </ul>
             </div>

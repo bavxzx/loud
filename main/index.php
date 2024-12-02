@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
@@ -28,7 +27,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <div class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="index.php" class="link active">Inicio</a></li>
-                    <li><a href="hydra.php" class="link">Hydra Collection</a></li>
+                    <li><a href="fórum.php" class="link">Hydra Collection</a></li>
                     <li><a href="contato.php" class="link">Contato</a></li>
                 </ul>
             </div>
@@ -47,7 +46,42 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 <i class="bx bx-menu" onclick="myMenuFunction()"></i>
             </div>
         </nav>
-
+        <div class="news-section">
+    <div class="banner">
+        <img src="../img/banner.jpg" alt="Banner de Notícias">
+        <div class="banner-text">
+            <h2>Últimas Notícias</h2>
+            <p>Fique por dentro das novidades mais recentes!</p>
+        </div>
+    </div>
+    <div class="news-container">
+        <div class="news-card">
+            <img src="../img/dgzin.jpg" alt="Notícia 1">
+            <h3>Dgzin na LOUD 2025.</h3>
+            <p>Descrição curta da notícia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="read-more">Leia mais</a>
+        </div>
+        <div class="news-card">
+            <img src="../img/vinijr.jpg" alt="Notícia 2">
+            <h3>Vini Jr sócio da LOUD!</h3>
+            <p>Descrição curta da notícia 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="read-more">Leia mais</a>
+        </div>
+        <div class="news-card">
+            <img src="../img/lesssad.jpg" alt="Notícia 3">
+            <h3>Título da Notícia 3</h3>
+            <p>Descrição curta da notícia 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="read-more">Leia mais</a>
+        </div>
+        <div class="news-card">
+            <img src="../img/vinny.jpg" alt="Notícia 4">
+            <h3>Dgzin novo IGL da loud valorant!</h3>
+            <p>Descrição curta da notícia 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="read-more">Leia mais</a>
+        </div>
+        <!-- Adicione mais cards conforme necessário -->
+    </div>
+</div>
         <script>
             function myMenuFunction() {
                 var i = document.getElementById("navMenu");
@@ -58,6 +92,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 }
             }
         </script>
+    
 </body>
 
 </html>
